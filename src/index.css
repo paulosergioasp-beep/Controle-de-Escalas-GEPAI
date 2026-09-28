@@ -1,0 +1,129 @@
+:root {
+  /* Color Palette */
+  --bg-primary: #0a0e17;
+  --bg-secondary: #111827;
+  --bg-card: rgba(17, 24, 39, 0.75);
+  --bg-card-hover: rgba(26, 36, 56, 0.85);
+  --bg-input: #151d30;
+  --bg-input-focus: #1c263e;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-light: rgba(255, 255, 255, 0.12);
+  --border-focus: #6366f1;
+
+  /* Typography Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #0f172a;
+
+  /* Financial Accents */
+  --selic-color: #10b981;
+  --selic-glow: rgba(16, 185, 129, 0.25);
+  --selic-bg: rgba(16, 185, 129, 0.1);
+  --selic-border: rgba(16, 185, 129, 0.3);
+
+  --stock-color: #6366f1;
+  --stock-glow: rgba(99, 102, 241, 0.25);
+  --stock-bg: rgba(99, 102, 241, 0.1);
+  --stock-border: rgba(99, 102, 241, 0.3);
+
+  --invested-color: #38bdf8;
+  --invested-bg: rgba(56, 189, 248, 0.1);
+
+  --gold-color: #f59e0b;
+  --gold-glow: rgba(245, 158, 11, 0.3);
+  --gold-bg: rgba(245, 158, 11, 0.12);
+
+  --danger-color: #f43f5e;
+  --danger-bg: rgba(244, 63, 94, 0.1);
+
+  /* Fonts */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  /* Radius & Shadows */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
+  --shadow-glow-selic: 0 0 30px rgba(16, 185, 129, 0.2);
+  --shadow-glow-stock: 0 0 30px rgba(99, 102, 241, 0.2);
+  --shadow-glow-gold: 0 0 30px rgba(245, 158, 11, 0.25);
+
+  /* Glassmorphism */
+  --glass-backdrop: blur(16px);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reset & Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 25%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(56, 189, 248, 0.05) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Base Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Container */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 20px 60px 20px;
+}
+
+/* Interactive elements */
+button, input, select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
